@@ -6,7 +6,7 @@ var mypromise = new Promise(function(resolve, reject){
  // call reject() to indicate task has failed 
 })
 
-//--------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------	
 
 var fs = require('fs');
 var request = require('request');
@@ -35,3 +35,20 @@ var getImage = function(){
 getImage().then(function() {
 	console.log("resolved")
 })
+
+
+// es6 ---------------------------------
+
+var myPromise = function() {
+
+	var promise1 = new Promise(
+		(resolve, reject) => {
+			window.setTimeout(
+				function() {
+					resolve("Gaurav")
+				}, 1000)
+		})
+	return promise1
+}
+
+console.log(myPromise())
