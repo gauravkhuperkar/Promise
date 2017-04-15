@@ -18,6 +18,8 @@ var getImage = function(){
 	var body;
 
     var promise = new Promise(function(resolve, reject){
+
+    	console.log(resolve)
 		request('http://www.google.com', function (error, response, body) {
 		  	err = error;
 	  		statusCode = response

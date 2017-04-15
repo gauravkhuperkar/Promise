@@ -19,4 +19,15 @@ var printMsg = function(err, msg) {
 	console.log(msg)
 }
 
-readWithCallback(textFile, printMsg);
+// readWithCallback(textFile, printMsg);
+
+// using promise 
+var readWithPromise = function(fileName) {
+	return new Promise(function(fullfill, reject) {
+		fs.readFile(fileName, 'utf8', function(err, res) {
+			if (err) reject(err)
+			else fullfill(res);
+		})
+	})
+}
+console.log(readWithPromise(textFile))
