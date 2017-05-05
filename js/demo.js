@@ -9,10 +9,9 @@ var promiseToEligibleForVoating = new Promise(function(resolve, reject) {
     }
 });
 
-
 promiseToEligibleForVoating.catch(
     function (errMsg) {
-        console.log("User is ",errMsg)
+        console.log("User is",errMsg)
     }
 );
 
@@ -30,8 +29,8 @@ var firstMethod = function() {
 
 
 var secondMethod = function(someStuff) {
-
     console.log('second method completed', someStuff);
+
     var promise = new Promise(function(resolve, reject){
         setTimeout(function() {
             resolve({newData: someStuff.data + ' some more data'});
@@ -41,6 +40,8 @@ var secondMethod = function(someStuff) {
 };
 
 var thirdMethod = function(someStuff) {
+    console.log('in third method with some stuff here..', someStuff);
+
     var promise = new Promise(function(resolve, reject){
         setTimeout(function() {
             console.log('third method completed ',someStuff);
