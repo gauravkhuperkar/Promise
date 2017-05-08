@@ -1,0 +1,31 @@
+body {
+    margin: 0px 50px;
+}
+
+.header {
+    margin-top: 50px;
+    font-family: fantasy;
+    font-size: 40px;
+    text-align: center;
+}
+
+.answerPaper {
+    background: #eeeeee;
+    padding: 20px;
+    font-size: 20px;
+    margin-top: 70px;
+    font-family: helvetica;
+    font-weight: 100;
+    text-align: center;
+}
+
+.questionPaper {
+    font-size: 20px;
+    margin-top: 70px;
+    margin-left: 70px;
+    font-family: helvetica;
+    font-weight: 200;
+    width:1200px;
+    height: 200px;
+    margin-top: 50px;
+}
